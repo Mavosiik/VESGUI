@@ -5,6 +5,10 @@
 body {
 	display: flex;
 }
+h1{
+	font-family: "JetBrains Mono",monospace;
+	color: #fff;
+}
 body > div { 
 	flex-basis: 50%;
 	align-items: center;
@@ -15,13 +19,15 @@ form {
 	background: transparent;
 }
 textarea {
+	
 	width: 75%;
-	height: 55vh;
+	height: 71vh;
 	background: white;
 	resize: none;
 }
 img {
-	width: 75%;
+	margin-top: 25%;
+	width: 90%;
 	background: white;
 	resize: none;
 	height: 50vh;

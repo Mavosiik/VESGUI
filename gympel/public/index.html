@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Vector Script GUI</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Vector Script GUI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+<style>
+    body {
+        border: 25px solid rgba(0, 0, 0, 0.7);
+        padding: 20px;
+}
+</style>
 </head>
 <body>
 <div>
-	<form method="POST" action="/render">
-		<textarea name="ves"></textarea>
+	<h1 style="text-align:right;">Projekt</h1>
+    <form method="POST" action="/render">
+        <textarea name="ves"></textarea>
 		<div>
 		<button class="button1">Vykresli!</button>
-		</div>
-	</form>
+		<button class="button1" onclick="refreshPage()">Vymazať</button>
+        </div>
+    </form>
 </div>
 <section>
-	<img id="output" img src="placeholder.gif" alt="Image"/>
+    <img id="output" img src="placeholder.gif" alt="Image"/>
 </section>
 <script type="text/javascript" src="script.js" ></script>
 </body>

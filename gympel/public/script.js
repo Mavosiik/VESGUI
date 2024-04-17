@@ -1,4 +1,8 @@
 // handleSubmit je funkcia, ktorá sa spustí keď sa bude mať odoslať náš formulár
+function refreshPage() {
+	location.reload();
+}
+
 function handleSubmit(e) {
 	e.preventDefault(); // zabrániť vstavenému odosielaniu v prehliadači
 
