@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  #canvasContainer {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 1920px; /* Adjust max-width as needed */
+    margin: 20px auto; /* Center the canvas container */
+  }
+  
+  canvas {
+    border: 2px solid #333; /* Add border to canvas */
+    width: 100%; /* Take up full width of parent container */
+    height: 80vh; /* Set canvas height to 80% of viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: auto; /* Center the canvas horizontally */
+  }
+  
+  #colorSelector,
+  #strokeSelector {
+    margin: 10px 0; /* Add space around color and stroke selectors */
+    text-align: left; /* Align color and stroke selector content to the left */
+  }
+  
+  .colorButton {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #buttonContainer {
+    margin-top: 10px;
+    text-align: left; /* Align buttons to the left */
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-right: 10px; /* Add margin to the right of buttons */
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent; /* Set button background to transparent */
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Add a slight background color on hover */
+  }
+  
+  button:active {
+    background-color: rgba(0, 0, 0, 0.2); /* Darken the background color on click */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button img {
+    width: 30px; /* Adjust the width of the icon */
+    height: 30px; /* Adjust the height of the icon */
+  }
+  
+  #lineCapSwitch {
+    opacity: 0; /* Hide the default checkbox */
+  }
+  
+  #lineCapIcon {
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  #lineCapSwitchContainer {
+    position: relative;
+    display: inline-block;
+  }
+/* Adjust the width and height of the icon to match the other icons */
+#lineCapIcon {
+    width: 10px;
+    height: 10px;
+    margin-left: -30px;
+    margin-right: -50px; /* Adjust the negative margin to move the icon to the left */
+    position: relative;
+    top: 2px; /* Adjust the vertical position if necessary */
+  }
+  
+  #lineCapSwitch {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none; /* Hide the checkbox but keep it accessible */
+  }
+
+
+  
+    
