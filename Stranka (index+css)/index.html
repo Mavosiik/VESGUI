@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DRAWIT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+<style>
+    body {
+        border: 25px solid rgba(0, 0, 0, 0.7);
+        padding: 20px;
+}
+    .button1 {
+    text-decoration: none;
+	text-shadow: none;
+	list-style-type: none;
+}
+</style>
+</head>
+<body>
+
+<div>
+	<h1 style="text-align:right;">DRAWIT</h1>
+    <form method="POST" action="/render">
+        <textarea name="ves"></textarea>
+		<div>
+		<button class="button1">Vykresli!</button>
+		<button class="button1" onclick="refreshPage()">Vymazať</button>
+        <button class="button1"><a href="paint.html">Draw it!</a></button>
+        
+        </div>
+    </form>
+</div>
+<section>
+    <img id="output" img src="placeholder.gif" alt="Image"/>
+</section>
+<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
